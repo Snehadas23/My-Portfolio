@@ -206,6 +206,14 @@ footer{
         grid-template-rows: repeat(3,1fr);
         grid-template-columns: 1fr;
     }
+    .one, .two, .three{
+        height: 40px;
+        width: 50px;
+    }
+    svg{
+        height: 30px;
+        width: 30px;
+    }
     
     
 }
@@ -269,11 +277,4 @@ footer{
     }
     
 }
-
-
-
-
-
-
-
 

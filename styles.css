@@ -1,0 +1,279 @@
+.boss{
+    height: fit-content;
+    width: 100%;
+}
+.parent{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/mountains.jpg);
+    background-size:cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    
+}
+.empty{
+    height: 50px;
+    width: 100%;
+    color:transparent;
+}
+
+body{
+    margin: 0;
+}
+h1 {
+    color: #d3e0e0;
+    font-size: 5.625rem;
+    margin: 35px auto 0 auto;
+    font-family: "Sacramento", cursive;
+}
+h2 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;  
+    /* background-color: #1d3141; */
+    padding-top: 70px;
+    
+}
+ body {
+    background-color:#1d3141;
+    margin: 0;
+    /* text-align: center; */
+    font-family: "Merriweather", serif;
+} 
+p {
+    width: 35%;
+    margin:auto;
+    line-height: 2;  
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+   font-size: 1.2rem;
+}
+hr{
+    
+    border: dotted 6px rgb(185, 190, 201);
+    border-bottom: none;
+    width: 4%;
+    margin: 80px auto;
+    
+}
+.skills, .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent2{
+    display: grid;
+    gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+    
+    
+    
+}
+.hard, .soft{
+    border-radius: 5%;
+    border: 2px solid white;
+    padding: 25px 30px 25px 30px;
+    height: fit-content;
+    
+} 
+ul{
+    text-align: start;
+    line-height: 2;
+    color: white;
+}
+h3{
+    color: white;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    
+}
+
+.cmp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.img1{
+    width: fit-content; height: 180px;
+    border:dotted 6px rgb(185, 190, 201);
+    padding: 10px;
+    margin: 30px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-image: url(./images/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    height: 56vh; 
+    background-color: #232c34;
+    padding-bottom: 15px;
+
+}
+
+.links{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 0;
+    width: fit-content;
+    margin: 20px auto 20px auto;
+   
+}
+
+.one, .two, .three{
+    border-radius: 5%;
+    border: 2px solid white;
+    padding: 25px 30px 25px 30px;
+    height: fit-content;
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+footer{
+    color: white;
+    text-align: center;
+    height:30px;
+    padding-top: 10px;
+}
+
+
+@media(min-width: 320px) and (max-width:600px){
+    h1{
+       font-size: 4rem;
+    }
+    h2{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .empty{
+        height: 0px;
+        margin: 0;
+    }
+    p{
+        font-size: 15px;
+        /* width:fit-content; */
+
+    }
+    img{
+        height: 180px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    .parent{
+        height: 100vh;
+    }
+    .profile{
+        margin-top: 20px;
+    }
+    hr{
+        margin: 80px auto;
+        border: 4px dotted rgb(185, 190, 201);
+        border-bottom: none;
+        
+    }
+    .contact{
+        height: fit-content;
+        width: auto;
+    }
+    .links{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+    }
+    
+    
+}
+@media(max-width:915px){
+    .parent2{
+        gap:50px;
+    }
+    .hard, .soft{
+        border-radius: 3%;
+        height:auto;
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+
+@media (max-width: 540px){
+    .parent2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2px;
+    }
+    .hard, .soft{
+        border-radius: 3%;
+        height:auto;
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+    
+} 
+
+@media(min-width:700px) and (max-width:1196px){
+    .work{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr 1fr;
+       
+        
+    }
+}
+@media(max-width:740px){
+    .work{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr;
+        width: 100%;
+        
+    }
+    .boss{
+        width:fit-content
+    }
+    .pic{
+        margin-top: 0;
+        height:150px ;
+        width: 280px;
+    }
+    .img1{
+        height: 150px;
+        width: 280px;
+    }
+    
+}
+
+
+
+
+
+
+
+

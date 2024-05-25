@@ -128,7 +128,7 @@ h3{
     /* background-image: url(./images/mountains.jpg);
     background-repeat: no-repeat;
     background-size: cover;*/
-    height: 50vh; 
+    padding-bottom: 20px;
     background-color: #232c34;
 
 }
